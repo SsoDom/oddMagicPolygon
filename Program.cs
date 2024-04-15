@@ -5,9 +5,9 @@ public class oddMagicPolygon
     public static void Main(string[] args)
     {
         int e = 0;  // Eingabewert
-        int s = 0;  // Summe aus drei Zahlen
-        int n = 0;  // 2 * e
-        int min = 1;
+        int s = 0;  // Summe aus den drei Zahlen, die jeweils auf einer Kante liegen
+        int n = 0;  // Anzahl aller Zahlen auf dem Polygon (2 * e)
+        int min = 1;// erste Zahl ist immer die 1
         int z1 = 0; // letzte Zahl
         int z2 = 0; // erste Zahl 
         int sz = 0; // Summe z1 & z2
@@ -17,40 +17,40 @@ public class oddMagicPolygon
         int summegu = 0; // Summe der Summe der geraden und ungeraden Zahlen
 
 
-      
-            
-            bool validInput = false;
 
-            while (!validInput)
+
+        bool validInput = false; //Initialwert ist false und ändert sich erst wenn eine ungerade Zahl eingeben wird
+
+        while (!validInput)
+        {
+            try
             {
-                try
+                Console.WriteLine("Bitte geben Sie eine ungerade ganze Zahl ein:");
+                e = int.Parse(Console.ReadLine());
+                n = 2 * e;
+                if (e % 2 == 0)
                 {
-                    Console.WriteLine("Bitte geben Sie eine ungerade ganze Zahl ein:");
-                    e = int.Parse(Console.ReadLine());
-                    n = 2 * e;
-                    if (e % 2 == 0)
-                    {
-                        throw new ArgumentException("Sie haben eine gerade Zahl eingegeben.");
-                    }
+                    throw new ArgumentException("Sie haben eine gerade Zahl eingegeben.");
+                }
 
-                    validInput = true;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Sie haben keine Zahl eingegeben.");
-                }
-                catch (ArgumentException ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
+                validInput = true;
             }
+            catch (FormatException)
+            {
+                Console.WriteLine("Sie haben keine Zahl eingegeben.");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
 
-            Console.WriteLine("Die eingegebene ungerade Zahl ist: " + e);
-        
+        Console.WriteLine("Die eingegebene ungerade Zahl ist: " + e);
 
 
 
-        while (i < (n + 1))
+
+        while (i <= n)
         {
 
             if (i % 2 == 0)
@@ -77,7 +77,7 @@ public class oddMagicPolygon
 
         Console.WriteLine(z2 + " + " + min + " + " + z1 + " = " + s);
 
-        while (min < (n - 1))
+        while (min < (n - 1)) //die Schleife wird solange durchlaufen bis die größte ungerade Zahl erreicht ist
         {
 
             min = min + 2; // das Minmum wird immer um 2 größer
