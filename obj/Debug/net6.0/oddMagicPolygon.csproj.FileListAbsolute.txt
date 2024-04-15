@@ -1,0 +1,15 @@
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\bin\Debug\net6.0\oddMagicPolygon.exe
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\bin\Debug\net6.0\oddMagicPolygon.deps.json
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\bin\Debug\net6.0\oddMagicPolygon.runtimeconfig.json
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\bin\Debug\net6.0\oddMagicPolygon.dll
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\bin\Debug\net6.0\oddMagicPolygon.pdb
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.csproj.AssemblyReference.cache
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.AssemblyInfoInputs.cache
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.AssemblyInfo.cs
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.csproj.CoreCompileInputs.cache
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.dll
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\refint\oddMagicPolygon.dll
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.pdb
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\oddMagicPolygon.genruntimeconfig.cache
+C:\Users\Domi\source\repos\oddMagicPolygon\oddMagicPolygon\obj\Debug\net6.0\ref\oddMagicPolygon.dll
