@@ -16,16 +16,39 @@ public class oddMagicPolygon
         int summeu = 0; // Summe der ungeraden Zahlen
         int summegu = 0; // Summe der Summe der geraden und ungeraden Zahlen
 
-        try
-        {
-            Console.WriteLine("Bitte geben sie eine ungerade ganze Zahl ein");
-            e = int.Parse(Console.ReadLine());
-            n = 2 * e;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Fehler beim Einlesen der Zahl.");
-        }
+
+      
+            
+            bool validInput = false;
+
+            while (!validInput)
+            {
+                try
+                {
+                    Console.WriteLine("Bitte geben Sie eine ungerade ganze Zahl ein:");
+                    e = int.Parse(Console.ReadLine());
+                    n = 2 * e;
+                    if (e % 2 == 0)
+                    {
+                        throw new ArgumentException("Sie haben eine gerade Zahl eingegeben.");
+                    }
+
+                    validInput = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Sie haben keine Zahl eingegeben.");
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            Console.WriteLine("Die eingegebene ungerade Zahl ist: " + e);
+        
+
+
 
         while (i < (n + 1))
         {
